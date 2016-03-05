@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PageViewCell: UITableViewCell ,UIScrollViewDelegate{
+class PageViewCell: TableViewCell ,UIScrollViewDelegate{
     
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -23,17 +23,15 @@ class PageViewCell: UITableViewCell ,UIScrollViewDelegate{
             if (i < 8){
                 let frame = CGRectMake(i * btnW, 0, btnW, btnH)
                 let btn = UIButton(frame: frame)
-                btn.setTitle("\(i)", forState: .Normal)
-                btn.backgroundColor = UIColor.blueColor()
+                btn.setImage(UIImage(named: "Btn"), forState: .Normal)
                 self.scrollView.addSubview(btn)
                 return
             }
             if(i < 16){
                 let frame = CGRectMake((i - 8) * btnW, btnH, btnW, btnH)
                 let btn = UIButton(frame: frame)
-                btn.setTitle("\(i)", forState: .Normal)
+                btn.setImage(UIImage(named: "Btn"), forState: .Normal)
                 self.scrollView.addSubview(btn)
-                btn.backgroundColor = UIColor.blueColor()
                 return
             }
             

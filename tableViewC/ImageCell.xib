@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="w60-XN-pvR" customClass="TableViewCell" customModule="tableViewC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w60-XN-pvR" id="sgl-P9-1Xh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zTG-ez-EqX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zTG-ez-EqX" firstAttribute="top" secondItem="sgl-P9-1Xh" secondAttribute="top" id="1To-sR-a0P"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zTG-ez-EqX" secondAttribute="bottom" constant="-8" id="D7V-1g-wWw"/>
+                    <constraint firstItem="zTG-ez-EqX" firstAttribute="leading" secondItem="sgl-P9-1Xh" secondAttribute="leadingMargin" constant="-8" id="Kzn-ex-lph"/>
+                    <constraint firstAttribute="bottom" secondItem="zTG-ez-EqX" secondAttribute="bottom" id="M2p-fD-VdY"/>
+                    <constraint firstAttribute="trailing" secondItem="zTG-ez-EqX" secondAttribute="trailing" id="WRZ-IM-wUd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zTG-ez-EqX" secondAttribute="trailing" constant="-8" id="bg1-M5-Lxg"/>
+                    <constraint firstItem="zTG-ez-EqX" firstAttribute="top" secondItem="sgl-P9-1Xh" secondAttribute="topMargin" constant="-8" id="gS8-Og-NGo"/>
+                    <constraint firstItem="zTG-ez-EqX" firstAttribute="leading" secondItem="sgl-P9-1Xh" secondAttribute="leading" id="ibv-f2-fvb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageV" destination="zTG-ez-EqX" id="7gy-iG-91z"/>
+                <outlet property="imageView" destination="zTG-ez-EqX" id="cZY-Ft-oBD"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="377"/>
+        </tableViewCell>
+    </objects>
+</document>
