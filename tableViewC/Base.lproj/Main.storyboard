@@ -36,7 +36,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-1J-uei">
                                 <rect key="frame" x="0.0" y="20" width="600" height="51"/>
-                                <color key="backgroundColor" red="0.043137254899999998" green="0.94901960780000005" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="HdH-U9-4Jo"/>
                                 </constraints>
@@ -44,6 +43,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OU1-C1-3Jh">
                                 <rect key="frame" x="0.0" y="71" width="600" height="480"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" red="0.76574472717894737" green="0.77901872101052638" blue="0.80639260437105253" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PageCell" id="eKI-TN-asH">
@@ -53,6 +53,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="N4C-eu-hse">
                                         <rect key="frame" x="0.0" y="72" width="600" height="44"/>
@@ -61,6 +62,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -69,7 +71,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.043137254899999998" green="0.94901960780000005" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33674686774380808" green="0.74117647058823533" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dNQ-1J-uei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9H8-kn-hKi"/>
                             <constraint firstItem="OU1-C1-3Jh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C4p-ch-FMy"/>
@@ -92,6 +94,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="XO3-EE-M1n"/>
                     <connections>
+                        <outlet property="navRootView" destination="dNQ-1J-uei" id="tqE-03-Fvo"/>
                         <outlet property="tableView" destination="OU1-C1-3Jh" id="dA0-XN-GQ5"/>
                     </connections>
                 </viewController>

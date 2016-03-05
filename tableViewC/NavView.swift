@@ -17,5 +17,10 @@ class NavView: UIView {
         // Drawing code
     }
     */
+    @IBOutlet weak var locateBtn: UIButton!
+    
+    @IBOutlet weak var searchBtn: UIButton!
 
+    @IBOutlet weak var messageBtn: UIButton!
+    @IBOutlet weak var scanerBtn: UIButton!
 }

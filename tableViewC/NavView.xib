@@ -1,10 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zVJ-bn-b9P" customClass="NavView" customModule="tableViewC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc4-K7-Crb">
+                    <rect key="frame" x="148" y="0.0" width="205" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="205" id="toY-n7-GZw"/>
+                    </constraints>
+                    <state key="normal" image="SearchView"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-XF-J3f">
+                    <rect key="frame" x="353" y="0.0" width="74" height="47"/>
+                    <state key="normal" image="Scaner"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-rA-WpL">
+                    <rect key="frame" x="0.0" y="0.0" width="148" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="江门"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjB-l4-ytV">
+                    <rect key="frame" x="427" y="0.0" width="73" height="47"/>
+                    <state key="normal" image="Message"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.30588235294117649" green="0.74117647058823533" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QCD-rA-WpL" secondAttribute="bottom" id="0VG-VA-WFr"/>
+                <constraint firstAttribute="bottom" secondItem="Xc4-K7-Crb" secondAttribute="bottom" id="0zd-ro-abF"/>
+                <constraint firstItem="Xc4-K7-Crb" firstAttribute="top" secondItem="zVJ-bn-b9P" secondAttribute="top" id="2Pr-Hy-kiX"/>
+                <constraint firstItem="SjB-l4-ytV" firstAttribute="leading" secondItem="bVg-XF-J3f" secondAttribute="trailing" id="BPf-Ai-Ujy"/>
+                <constraint firstItem="Xc4-K7-Crb" firstAttribute="centerX" secondItem="zVJ-bn-b9P" secondAttribute="centerX" id="DQl-3R-n7S"/>
+                <constraint firstItem="Xc4-K7-Crb" firstAttribute="leading" secondItem="QCD-rA-WpL" secondAttribute="trailing" id="Dwj-gt-4de"/>
+                <constraint firstItem="QCD-rA-WpL" firstAttribute="top" secondItem="zVJ-bn-b9P" secondAttribute="top" id="J0c-Mv-Xxd"/>
+                <constraint firstItem="bVg-XF-J3f" firstAttribute="top" secondItem="zVJ-bn-b9P" secondAttribute="top" id="MxV-kF-XTK"/>
+                <constraint firstItem="bVg-XF-J3f" firstAttribute="width" secondItem="SjB-l4-ytV" secondAttribute="width" constant="1" id="Ohp-NZ-MPz"/>
+                <constraint firstItem="SjB-l4-ytV" firstAttribute="top" secondItem="zVJ-bn-b9P" secondAttribute="top" id="THQ-Iw-4yg"/>
+                <constraint firstItem="QCD-rA-WpL" firstAttribute="leading" secondItem="zVJ-bn-b9P" secondAttribute="leading" id="VxT-hO-HO7"/>
+                <constraint firstItem="bVg-XF-J3f" firstAttribute="leading" secondItem="Xc4-K7-Crb" secondAttribute="trailing" id="a8O-WX-QgJ"/>
+                <constraint firstAttribute="trailing" secondItem="SjB-l4-ytV" secondAttribute="trailing" id="aux-M9-QPl"/>
+                <constraint firstAttribute="bottom" secondItem="bVg-XF-J3f" secondAttribute="bottom" id="pV8-Fi-rfR"/>
+                <constraint firstAttribute="bottom" secondItem="SjB-l4-ytV" secondAttribute="bottom" id="y3t-NT-gsb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="locateBtn" destination="QCD-rA-WpL" id="CGs-ve-iNm"/>
+                <outlet property="messageBtn" destination="SjB-l4-ytV" id="6rj-Qz-LcJ"/>
+                <outlet property="scanerBtn" destination="bVg-XF-J3f" id="hcg-R6-1HR"/>
+                <outlet property="searchBtn" destination="Xc4-K7-Crb" id="YVh-Oh-Vw1"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="165.5"/>
+        </view>
     </objects>
+    <resources>
+        <image name="Message" width="42" height="35"/>
+        <image name="Scaner" width="47" height="40"/>
+        <image name="SearchView" width="205" height="49"/>
+    </resources>
 </document>

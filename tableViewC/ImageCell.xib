@@ -19,17 +19,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstItem="zTG-ez-EqX" firstAttribute="top" secondItem="sgl-P9-1Xh" secondAttribute="top" id="1To-sR-a0P"/>
                     <constraint firstAttribute="bottomMargin" secondItem="zTG-ez-EqX" secondAttribute="bottom" constant="-8" id="D7V-1g-wWw"/>
                     <constraint firstItem="zTG-ez-EqX" firstAttribute="leading" secondItem="sgl-P9-1Xh" secondAttribute="leadingMargin" constant="-8" id="Kzn-ex-lph"/>
                     <constraint firstAttribute="bottom" secondItem="zTG-ez-EqX" secondAttribute="bottom" id="M2p-fD-VdY"/>
+                    <constraint firstAttribute="trailing" secondItem="zTG-ez-EqX" secondAttribute="trailing" id="P3c-V3-Hvt"/>
                     <constraint firstAttribute="trailing" secondItem="zTG-ez-EqX" secondAttribute="trailing" id="WRZ-IM-wUd"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="zTG-ez-EqX" secondAttribute="trailing" constant="-8" id="bg1-M5-Lxg"/>
+                    <constraint firstItem="zTG-ez-EqX" firstAttribute="top" secondItem="sgl-P9-1Xh" secondAttribute="top" id="XqL-TL-sae"/>
                     <constraint firstItem="zTG-ez-EqX" firstAttribute="top" secondItem="sgl-P9-1Xh" secondAttribute="topMargin" constant="-8" id="gS8-Og-NGo"/>
                     <constraint firstItem="zTG-ez-EqX" firstAttribute="leading" secondItem="sgl-P9-1Xh" secondAttribute="leading" id="ibv-f2-fvb"/>
+                    <constraint firstAttribute="bottom" secondItem="zTG-ez-EqX" secondAttribute="bottom" id="iid-fw-PLT"/>
+                    <constraint firstItem="zTG-ez-EqX" firstAttribute="leading" secondItem="sgl-P9-1Xh" secondAttribute="leading" id="tdL-OQ-I9C"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="D7V-1g-wWw"/>
+                        <exclude reference="Kzn-ex-lph"/>
+                        <exclude reference="M2p-fD-VdY"/>
+                        <exclude reference="WRZ-IM-wUd"/>
+                        <exclude reference="gS8-Og-NGo"/>
+                        <exclude reference="ibv-f2-fvb"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="imageV" destination="zTG-ez-EqX" id="7gy-iG-91z"/>
                 <outlet property="imageView" destination="zTG-ez-EqX" id="cZY-Ft-oBD"/>

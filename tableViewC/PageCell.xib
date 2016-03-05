@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="640" height="175"/>
                                         <subviews>
                                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="bKl-FL-UBK">
-                                                <rect key="frame" x="0.0" y="155" width="320" height="20"/>
+                                                <rect key="frame" x="0.0" y="159" width="320" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="c29-zH-QJH"/>
                                                 </constraints>
@@ -54,10 +54,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.043137254899999998" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3Mk-Xg-LZh" firstAttribute="height" secondItem="T1q-dy-EbE" secondAttribute="height" id="PV6-PV-Azf"/>
                             <constraint firstItem="gp0-Rt-96q" firstAttribute="top" secondItem="T1q-dy-EbE" secondAttribute="top" id="ZMk-kp-iIe"/>
-                            <constraint firstAttribute="bottom" secondItem="bKl-FL-UBK" secondAttribute="bottom" id="bvF-Ux-ZRg"/>
                             <constraint firstAttribute="trailing" secondItem="gp0-Rt-96q" secondAttribute="trailing" id="fcy-Ru-hmD"/>
-                            <constraint firstItem="3Mk-Xg-LZh" firstAttribute="height" secondItem="T1q-dy-EbE" secondAttribute="height" id="g6S-iq-Pql"/>
                             <constraint firstItem="gp0-Rt-96q" firstAttribute="leading" secondItem="T1q-dy-EbE" secondAttribute="leading" id="upt-KR-ChC"/>
                             <constraint firstAttribute="bottom" secondItem="gp0-Rt-96q" secondAttribute="bottom" id="zvF-Tv-xoc"/>
                         </constraints>
@@ -78,12 +77,12 @@
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="QpF-cG-pvb"/>
-                        <exclude reference="1jE-ux-xv6"/>
                         <exclude reference="ghV-JB-LFU"/>
                         <exclude reference="rrn-8M-XLB"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="pageControl" destination="bKl-FL-UBK" id="RZw-1x-KYq"/>
                 <outlet property="scrollView" destination="gp0-Rt-96q" id="Wta-t0-bST"/>
