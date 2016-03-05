@@ -32,15 +32,15 @@ extension HomeController : UITableViewDataSource{
         switch indexPath.section {
             
         case 1:
-            imageCell.imageView?.image = self.images[0] as? UIImage
+            imageCell.imageV.image = self.images[0] as? UIImage
         case 2:
-            imageCell.imageView?.image = self.images[1] as? UIImage
+            imageCell.imageV.image = self.images[1] as? UIImage
         case 3:
             if indexPath.row == 0{
-                imageCell.imageView?.image = self.images[2] as? UIImage
+                imageCell.imageV.image = self.images[2] as? UIImage
             }
             else{
-                imageCell.imageView?.image = self.images[3] as? UIImage
+                imageCell.imageV.image = self.images[3] as? UIImage
             }
             
         default:
