@@ -66,6 +66,10 @@ extension HomeController : UITableViewDelegate{
     
     //MARK: - Hight for header 
     
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return footerViewH
     }

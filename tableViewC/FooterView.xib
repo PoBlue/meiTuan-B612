@@ -1,15 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FooterView" customModule="tableViewC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="608" height="244"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgs-hv-z5t">
+                    <rect key="frame" x="8" y="67" width="592" height="129"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49M-T4-8GZ">
+                            <rect key="frame" x="8" y="71" width="576" height="35"/>
+                            <color key="backgroundColor" red="0.33674686770000001" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="iYJ-xO-eWw"/>
+                            </constraints>
+                            <state key="normal" title="我的美团DNA">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="愿意让我们了解更多吗 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cte-FJ-nE0">
+                            <rect key="frame" x="229" y="18" width="134" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="ntY-ua-BcA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="让美团的推荐更符合你口味" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-WZ-gTg">
+                            <rect key="frame" x="218" y="42" width="156" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="VNE-vk-T8W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xIU-WZ-gTg" firstAttribute="centerX" secondItem="Mgs-hv-z5t" secondAttribute="centerX" id="42B-lH-lQv"/>
+                        <constraint firstItem="xIU-WZ-gTg" firstAttribute="top" secondItem="Cte-FJ-nE0" secondAttribute="bottom" constant="8" id="ATd-HF-K4R"/>
+                        <constraint firstAttribute="bottom" secondItem="49M-T4-8GZ" secondAttribute="bottom" constant="23" id="MFK-Iu-N8c"/>
+                        <constraint firstItem="49M-T4-8GZ" firstAttribute="leading" secondItem="Mgs-hv-z5t" secondAttribute="leading" constant="8" id="VJP-D1-dXN"/>
+                        <constraint firstItem="Cte-FJ-nE0" firstAttribute="centerX" secondItem="Mgs-hv-z5t" secondAttribute="centerX" id="Y9T-le-ErF"/>
+                        <constraint firstItem="49M-T4-8GZ" firstAttribute="top" secondItem="xIU-WZ-gTg" secondAttribute="bottom" constant="13" id="l3j-1z-dbW"/>
+                        <constraint firstItem="Cte-FJ-nE0" firstAttribute="top" secondItem="Mgs-hv-z5t" secondAttribute="top" constant="18" id="qXg-LD-P45"/>
+                        <constraint firstAttribute="trailing" secondItem="49M-T4-8GZ" secondAttribute="trailing" constant="8" id="sgr-ry-VKE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-NA-h8O">
+                    <rect key="frame" x="8" y="6" width="592" height="53"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="bJc-7F-mKW"/>
+                    </constraints>
+                    <state key="normal" title="查看全部团购">
+                        <color key="titleColor" red="0.30588235289999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.76470588235294112" green="0.7803921568627451" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Mgs-hv-z5t" firstAttribute="top" secondItem="2eu-NA-h8O" secondAttribute="bottom" constant="8" id="J7c-y6-Gn3"/>
+                <constraint firstAttribute="trailing" secondItem="2eu-NA-h8O" secondAttribute="trailing" constant="8" id="MyW-hE-PxA"/>
+                <constraint firstItem="2eu-NA-h8O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="bdh-36-dJU"/>
+                <constraint firstItem="Mgs-hv-z5t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fof-uN-6ep"/>
+                <constraint firstItem="2eu-NA-h8O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="gSi-IN-SVh"/>
+                <constraint firstAttribute="trailing" secondItem="Mgs-hv-z5t" secondAttribute="trailing" constant="8" id="sCo-kv-cjV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dnaBtn" destination="49M-T4-8GZ" id="pou-wP-He3"/>
+                <outlet property="moreBtn" destination="2eu-NA-h8O" id="nmm-hc-V9k"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="110"/>
         </view>
     </objects>
 </document>

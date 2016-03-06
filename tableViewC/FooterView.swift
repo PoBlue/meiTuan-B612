@@ -10,12 +10,15 @@ import UIKit
 
 class FooterView: UIView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+    @IBOutlet weak var moreBtn: UIButton!
 
+    @IBOutlet weak var dnaBtn: UIButton!
+    override func awakeFromNib() {
+        makeBorderBtn(moreBtn, radious: 3)
+        makeBorderBtn(dnaBtn, radious: 8)
+    }
+}
+
+func makeBorderBtn(btn:UIButton,radious:CGFloat){
+    btn.layer.cornerRadius = radious
 }
