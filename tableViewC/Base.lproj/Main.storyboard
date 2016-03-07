@@ -8,7 +8,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="OL4-BW-iPs">
             <objects>
-                <tabBarController id="bT9-ET-Yxy" sceneMemberID="viewController">
+                <tabBarController id="bT9-ET-Yxy" customClass="TabBarController" customModule="tableViewC" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qP2-W8-lH2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -17,13 +17,53 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6Is-iu-bk6"/>
                         <segue destination="TlO-o8-lij" kind="relationship" relationship="viewControllers" id="QPL-YD-wKr"/>
+                        <segue destination="Vsw-ym-sgr" kind="relationship" relationship="viewControllers" id="xhG-pH-vaQ"/>
+                        <segue destination="y3C-7P-L7r" kind="relationship" relationship="viewControllers" id="fQS-23-w8M"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmx-5X-YHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-490" y="283"/>
         </scene>
-        <!--Home Controller-->
+        <!--更多-->
+        <scene sceneID="4cL-z6-SLd">
+            <objects>
+                <viewController id="y3C-7P-L7r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dxc-ge-Xch"/>
+                        <viewControllerLayoutGuide type="bottom" id="dxx-PW-wi2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xjw-6N-r7i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="更多" image="icon_tabbar_misc-1" selectedImage="icon_tabbar_misc_selected-1" id="R1X-MH-N1m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDE-0C-skT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1123" y="991"/>
+        </scene>
+        <!--B612-->
+        <scene sceneID="DJa-8O-IAm">
+            <objects>
+                <viewController id="Vsw-ym-sgr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Grp-TP-eYk"/>
+                        <viewControllerLayoutGuide type="bottom" id="nOo-Pu-gLG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7fy-m9-too">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="B612" image="icon_tabbar_mine-1" selectedImage="icon_tabbar_mine_selected-1" id="EUJ-lr-JYg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5b-a0-ASN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444" y="1198"/>
+        </scene>
+        <!--首页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="tableViewC" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,9 +83,9 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OU1-C1-3Jh">
                                 <rect key="frame" x="0.0" y="71" width="600" height="480"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.83529411764705885" green="0.85098039215686272" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <color key="sectionIndexBackgroundColor" red="0.76470588235294112" green="0.7803921568627451" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.83529411764705885" green="0.85098039215686272" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PageCell" id="eKI-TN-asH">
                                         <rect key="frame" x="0.0" y="50" width="600" height="44"/>
@@ -72,7 +112,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.33674686774380808" green="0.74117647058823533" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33725490196078434" green="0.74117647058823533" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dNQ-1J-uei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9H8-kn-hKi"/>
                             <constraint firstItem="OU1-C1-3Jh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C4p-ch-FMy"/>
@@ -93,7 +133,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="XO3-EE-M1n"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="icon_tabbar_homepage-1" selectedImage="icon_tabbar_homepage_selected-1" id="XO3-EE-M1n"/>
                     <connections>
                         <outlet property="navRootView" destination="dNQ-1J-uei" id="tqE-03-Fvo"/>
                         <outlet property="tableView" destination="OU1-C1-3Jh" id="dA0-XN-GQ5"/>
@@ -101,9 +141,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="423" y="283"/>
+            <point key="canvasLocation" x="488" y="162"/>
         </scene>
-        <!--Bussiness Controller-->
+        <!--商家-->
         <scene sceneID="Y5Q-Vc-ncm">
             <objects>
                 <viewController id="TlO-o8-lij" customClass="BussinessController" customModule="tableViewC" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,22 +180,32 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElT-YC-aWR" customClass="SelectView" customModule="tableViewC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-jM-i3V">
-                                        <rect key="frame" x="200" y="0.0" width="200" height="44"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="全城"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hy-IV-524">
                                         <rect key="frame" x="401" y="0.0" width="199" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="智能分类"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="智能分类">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7g-xf-M5x">
                                         <rect key="frame" x="0.0" y="0.0" width="199" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="全部分类"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2"/>
+                                        <state key="normal" title="全部分类">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-jM-i3V">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="全城">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,21 +221,35 @@
                                     <constraint firstItem="2hy-IV-524" firstAttribute="width" secondItem="v7g-xf-M5x" secondAttribute="width" id="QFR-ud-4O3"/>
                                     <constraint firstItem="jTJ-jM-i3V" firstAttribute="width" secondItem="v7g-xf-M5x" secondAttribute="width" id="R2i-wH-Wkv"/>
                                     <constraint firstItem="v7g-xf-M5x" firstAttribute="leading" secondItem="ElT-YC-aWR" secondAttribute="leading" id="juQ-NK-IeM"/>
-                                    <constraint firstItem="2hy-IV-524" firstAttribute="height" secondItem="ElT-YC-aWR" secondAttribute="height" id="kwU-7P-eVJ"/>
+                                    <constraint firstItem="2hy-IV-524" firstAttribute="height" secondItem="ElT-YC-aWR" secondAttribute="height" constant="-1" id="kwU-7P-eVJ"/>
                                     <constraint firstItem="jTJ-jM-i3V" firstAttribute="top" secondItem="ElT-YC-aWR" secondAttribute="top" id="ogu-yp-Q2x"/>
                                     <constraint firstItem="2hy-IV-524" firstAttribute="top" secondItem="v7g-xf-M5x" secondAttribute="top" id="ySo-te-Tpi"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-qg-TS8">
-                                <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <rect key="frame" x="0.0" y="109" width="600" height="442"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="lg8-R8-pLG">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lg8-R8-pLG" id="uZA-kB-0nI">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="TlO-o8-lij" id="X32-6b-Wjh"/>
+                                    <outlet property="delegate" destination="TlO-o8-lij" id="JxO-DW-mAc"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="F0P-qg-TS8" firstAttribute="leading" secondItem="dYq-Ys-rw8" secondAttribute="leading" id="2Z6-Xg-h18"/>
                             <constraint firstItem="P37-Sq-XKw" firstAttribute="top" secondItem="F0P-qg-TS8" secondAttribute="bottom" id="2qk-Sq-yWL"/>
-                            <constraint firstItem="ElT-YC-aWR" firstAttribute="height" secondItem="uBi-lF-Id1" secondAttribute="height" id="AgL-TE-Cek"/>
+                            <constraint firstItem="ElT-YC-aWR" firstAttribute="height" secondItem="uBi-lF-Id1" secondAttribute="height" constant="1" id="AgL-TE-Cek"/>
                             <constraint firstItem="uBi-lF-Id1" firstAttribute="top" secondItem="lZZ-Wc-4Fl" secondAttribute="bottom" id="K4V-pg-HWE"/>
                             <constraint firstItem="ElT-YC-aWR" firstAttribute="top" secondItem="uBi-lF-Id1" secondAttribute="bottom" id="L5E-eL-R0e"/>
                             <constraint firstItem="uBi-lF-Id1" firstAttribute="leading" secondItem="dYq-Ys-rw8" secondAttribute="leading" id="PTj-QD-UUY"/>
@@ -196,11 +260,24 @@
                             <constraint firstItem="ElT-YC-aWR" firstAttribute="width" secondItem="uBi-lF-Id1" secondAttribute="width" id="uZu-Sd-w7R"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="4g8-S2-DBE"/>
+                    <tabBarItem key="tabBarItem" title="商家" image="icon_tabbar_merchant_normal-1" selectedImage="icon_tabbar_merchant_selected-1" id="4g8-S2-DBE"/>
+                    <connections>
+                        <outlet property="tableView" destination="F0P-qg-TS8" id="lOQ-1F-PZk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPM-nH-xXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="346" y="991"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_tabbar_homepage-1" width="26" height="26"/>
+        <image name="icon_tabbar_homepage_selected-1" width="26" height="26"/>
+        <image name="icon_tabbar_merchant_normal-1" width="26" height="26"/>
+        <image name="icon_tabbar_merchant_selected-1" width="26" height="26"/>
+        <image name="icon_tabbar_mine-1" width="26" height="26"/>
+        <image name="icon_tabbar_mine_selected-1" width="26" height="26"/>
+        <image name="icon_tabbar_misc-1" width="26" height="26"/>
+        <image name="icon_tabbar_misc_selected-1" width="26" height="26"/>
+    </resources>
 </document>
