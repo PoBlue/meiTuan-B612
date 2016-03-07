@@ -56,10 +56,10 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-NA-h8O">
-                    <rect key="frame" x="8" y="6" width="592" height="53"/>
+                    <rect key="frame" x="8" y="17" width="592" height="42"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="53" id="bJc-7F-mKW"/>
+                        <constraint firstAttribute="height" constant="42" id="bJc-7F-mKW"/>
                     </constraints>
                     <state key="normal" title="查看全部团购">
                         <color key="titleColor" red="0.30588235289999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,7 +72,7 @@
                 <constraint firstAttribute="trailing" secondItem="2eu-NA-h8O" secondAttribute="trailing" constant="8" id="MyW-hE-PxA"/>
                 <constraint firstItem="2eu-NA-h8O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="bdh-36-dJU"/>
                 <constraint firstItem="Mgs-hv-z5t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fof-uN-6ep"/>
-                <constraint firstItem="2eu-NA-h8O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="gSi-IN-SVh"/>
+                <constraint firstItem="2eu-NA-h8O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="gSi-IN-SVh"/>
                 <constraint firstAttribute="trailing" secondItem="Mgs-hv-z5t" secondAttribute="trailing" constant="8" id="sCo-kv-cjV"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

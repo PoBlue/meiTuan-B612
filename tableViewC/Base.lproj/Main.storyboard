@@ -16,6 +16,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6Is-iu-bk6"/>
+                        <segue destination="TlO-o8-lij" kind="relationship" relationship="viewControllers" id="QPL-YD-wKr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmx-5X-YHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,6 +102,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="423" y="283"/>
+        </scene>
+        <!--Bussiness Controller-->
+        <scene sceneID="Y5Q-Vc-ncm">
+            <objects>
+                <viewController id="TlO-o8-lij" customClass="BussinessController" customModule="tableViewC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lZZ-Wc-4Fl"/>
+                        <viewControllerLayoutGuide type="bottom" id="P37-Sq-XKw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dYq-Ys-rw8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBi-lF-Id1">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="b6T-2o-SoH">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" title="位置" id="cXf-Oi-0W0">
+                                            <color key="tintColor" red="0.33674686770000001" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="1kS-Cg-cti">
+                                            <rect key="frame" x="225" y="7" width="150" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <segments>
+                                                <segment title="全部商家"/>
+                                                <segment title="优惠商家"/>
+                                            </segments>
+                                            <color key="tintColor" red="0.30588235289999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                        </segmentedControl>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="fPn-iw-c22">
+                                            <color key="tintColor" red="0.30588235289999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElT-YC-aWR" customClass="SelectView" customModule="tableViewC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-jM-i3V">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="全城"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hy-IV-524">
+                                        <rect key="frame" x="401" y="0.0" width="199" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="智能分类"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7g-xf-M5x">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="全部分类"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jTJ-jM-i3V" firstAttribute="leading" secondItem="v7g-xf-M5x" secondAttribute="trailing" constant="1" id="1W4-Y5-yhr"/>
+                                    <constraint firstAttribute="trailing" secondItem="2hy-IV-524" secondAttribute="trailing" id="4dT-LI-Yn0"/>
+                                    <constraint firstItem="2hy-IV-524" firstAttribute="leading" secondItem="jTJ-jM-i3V" secondAttribute="trailing" constant="1" id="6YS-tB-Q61"/>
+                                    <constraint firstItem="jTJ-jM-i3V" firstAttribute="top" secondItem="v7g-xf-M5x" secondAttribute="top" id="7Vk-dn-ZXK"/>
+                                    <constraint firstItem="jTJ-jM-i3V" firstAttribute="height" secondItem="v7g-xf-M5x" secondAttribute="height" id="G0H-nw-FJu"/>
+                                    <constraint firstItem="v7g-xf-M5x" firstAttribute="top" secondItem="ElT-YC-aWR" secondAttribute="top" id="Gh4-7L-mBx"/>
+                                    <constraint firstItem="2hy-IV-524" firstAttribute="height" secondItem="v7g-xf-M5x" secondAttribute="height" id="INe-KF-dRp"/>
+                                    <constraint firstItem="2hy-IV-524" firstAttribute="top" secondItem="ElT-YC-aWR" secondAttribute="top" id="NXs-wt-Utt"/>
+                                    <constraint firstItem="2hy-IV-524" firstAttribute="width" secondItem="v7g-xf-M5x" secondAttribute="width" id="QFR-ud-4O3"/>
+                                    <constraint firstItem="jTJ-jM-i3V" firstAttribute="width" secondItem="v7g-xf-M5x" secondAttribute="width" id="R2i-wH-Wkv"/>
+                                    <constraint firstItem="v7g-xf-M5x" firstAttribute="leading" secondItem="ElT-YC-aWR" secondAttribute="leading" id="juQ-NK-IeM"/>
+                                    <constraint firstItem="2hy-IV-524" firstAttribute="height" secondItem="ElT-YC-aWR" secondAttribute="height" id="kwU-7P-eVJ"/>
+                                    <constraint firstItem="jTJ-jM-i3V" firstAttribute="top" secondItem="ElT-YC-aWR" secondAttribute="top" id="ogu-yp-Q2x"/>
+                                    <constraint firstItem="2hy-IV-524" firstAttribute="top" secondItem="v7g-xf-M5x" secondAttribute="top" id="ySo-te-Tpi"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-qg-TS8">
+                                <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F0P-qg-TS8" firstAttribute="leading" secondItem="dYq-Ys-rw8" secondAttribute="leading" id="2Z6-Xg-h18"/>
+                            <constraint firstItem="P37-Sq-XKw" firstAttribute="top" secondItem="F0P-qg-TS8" secondAttribute="bottom" id="2qk-Sq-yWL"/>
+                            <constraint firstItem="ElT-YC-aWR" firstAttribute="height" secondItem="uBi-lF-Id1" secondAttribute="height" id="AgL-TE-Cek"/>
+                            <constraint firstItem="uBi-lF-Id1" firstAttribute="top" secondItem="lZZ-Wc-4Fl" secondAttribute="bottom" id="K4V-pg-HWE"/>
+                            <constraint firstItem="ElT-YC-aWR" firstAttribute="top" secondItem="uBi-lF-Id1" secondAttribute="bottom" id="L5E-eL-R0e"/>
+                            <constraint firstItem="uBi-lF-Id1" firstAttribute="leading" secondItem="dYq-Ys-rw8" secondAttribute="leading" id="PTj-QD-UUY"/>
+                            <constraint firstAttribute="trailing" secondItem="F0P-qg-TS8" secondAttribute="trailing" id="ZKp-0a-mah"/>
+                            <constraint firstAttribute="trailing" secondItem="uBi-lF-Id1" secondAttribute="trailing" id="aTa-Jf-bJb"/>
+                            <constraint firstItem="ElT-YC-aWR" firstAttribute="leading" secondItem="dYq-Ys-rw8" secondAttribute="leading" id="efQ-lu-HXh"/>
+                            <constraint firstItem="F0P-qg-TS8" firstAttribute="top" secondItem="ElT-YC-aWR" secondAttribute="bottom" id="ld8-FO-3YW"/>
+                            <constraint firstItem="ElT-YC-aWR" firstAttribute="width" secondItem="uBi-lF-Id1" secondAttribute="width" id="uZu-Sd-w7R"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="4g8-S2-DBE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YPM-nH-xXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="991"/>
         </scene>
     </scenes>
 </document>
