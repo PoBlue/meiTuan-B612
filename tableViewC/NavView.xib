@@ -17,18 +17,18 @@
                     <inset key="imageEdgeInsets" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="江门"/>
                 </button>
-                <searchBar contentMode="redraw" placeholder="输入商家，商品" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-eX-lOY">
+                <searchBar contentMode="redraw" misplaced="YES" placeholder="输入商家，商品" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-eX-lOY">
                     <rect key="frame" x="43" y="0.0" width="385" height="46"/>
                     <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                     <color key="barTintColor" red="0.33725490196078434" green="0.74117647058823533" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                     <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3g-4K-eNX">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3g-4K-eNX">
                     <rect key="frame" x="468" y="0.0" width="24" height="44"/>
                     <state key="normal" image="icon_homepage_scan"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-XF-J3f">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-XF-J3f">
                     <rect key="frame" x="436" y="1" width="24" height="43"/>
                     <state key="normal" image="icon_homepage_scan"/>
                 </button>
