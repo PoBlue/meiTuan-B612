@@ -27,20 +27,20 @@ extension HomeController : UITableViewDataSource{
             return PageCell
         }
         
-        let imageCell = tableView.dequeueReusableCellWithIdentifier("ImageCell") as! TableViewCell
+        let returnCell = tableView.dequeueReusableCellWithIdentifier("ImageCell") as! TableViewCell
         
         switch indexPath.section {
             
         case 1:
-            imageCell.imageV.image = self.images[0] as? UIImage
+            returnCell.imageV.image = self.images[0] as? UIImage
         case 2:
-            imageCell.imageV.image = self.images[1] as? UIImage
+            returnCell.imageV.image = self.images[1] as? UIImage
         case 3:
             if indexPath.row == 0{
-                imageCell.imageV.image = self.images[2] as? UIImage
+                returnCell.imageV.image = self.images[2] as? UIImage
             }
             else{
-                imageCell.imageV.image = self.images[3] as? UIImage
+              return tableView.dequeueReusableCellWithIdentifier("ItemsCell")!
             }
             
         default:
@@ -48,7 +48,7 @@ extension HomeController : UITableViewDataSource{
         }
         
         
-        return imageCell
+        return returnCell
         
 
     }

@@ -10,9 +10,22 @@ import UIKit
 
 class BussinessController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
-        self.tableView.registerNib(UINib(nibName: "ImageCell", bundle: mainBundle), forCellReuseIdentifier: "ImageCell")
+        self.tableView.registerNib(UINib(nibName: "ItemsCell", bundle: mainBundle), forCellReuseIdentifier: "ImageCell")
+        addRefreshController()
     }
+    
+    func addRefreshController(){
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        tableView.addSubview(refreshControl)
+    }
+    
+    func refresh(refreshCtl : UIRefreshControl){
+        refreshCtl.endRefreshing()
+    }
+
 }
 
 extension BussinessController:UITableViewDataSource{
@@ -21,8 +34,8 @@ extension BussinessController:UITableViewDataSource{
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let imageCell = tableView.dequeueReusableCellWithIdentifier("ImageCell") as! TableViewCell
-        imageCell.imageV.image = DataAPI.shareInstance.getImages()[3]
+        let imageCell = tableView.dequeueReusableCellWithIdentifier("ImageCell")!
+//        imageCell.imageV.image = DataAPI.shareInstance.getImages()[3]
         
         return imageCell
     }

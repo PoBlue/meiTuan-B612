@@ -3,59 +3,32 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="w60-XN-pvR" customClass="TableViewCell" customModule="tableViewC" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="oen-cX-cB0" customClass="TableViewCell" customModule="tableViewC" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w60-XN-pvR" id="sgl-P9-1Xh">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oen-cX-cB0" id="kdC-rB-6I6">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gs6-jm-pFD">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CEP-iM-0pq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7G3-AH-ngg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="7G3-AH-ngg" firstAttribute="top" secondItem="Gs6-jm-pFD" secondAttribute="top" id="2Et-gF-Wb1"/>
-                            <constraint firstItem="7G3-AH-ngg" firstAttribute="centerX" secondItem="Gs6-jm-pFD" secondAttribute="centerX" id="Q4A-4u-eVW"/>
-                            <constraint firstItem="7G3-AH-ngg" firstAttribute="centerY" secondItem="Gs6-jm-pFD" secondAttribute="centerY" id="mY9-M7-JfV"/>
-                            <constraint firstAttribute="bottom" secondItem="7G3-AH-ngg" secondAttribute="bottom" id="xos-7D-4qC"/>
-                        </constraints>
-                    </view>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Gs6-jm-pFD" firstAttribute="leading" secondItem="sgl-P9-1Xh" secondAttribute="leading" id="2ie-Zs-H6d"/>
-                    <constraint firstAttribute="trailing" secondItem="Gs6-jm-pFD" secondAttribute="trailing" id="DEw-5k-GS7"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Gs6-jm-pFD" secondAttribute="bottom" constant="-51" id="Fur-gk-oH0"/>
-                    <constraint firstItem="7G3-AH-ngg" firstAttribute="width" secondItem="sgl-P9-1Xh" secondAttribute="width" id="SKW-HY-NkA"/>
-                    <constraint firstAttribute="bottom" secondItem="Gs6-jm-pFD" secondAttribute="bottom" id="cAZ-14-MpI"/>
-                    <constraint firstItem="Gs6-jm-pFD" firstAttribute="leading" secondItem="sgl-P9-1Xh" secondAttribute="leadingMargin" constant="-8" id="cD1-jh-zKI"/>
-                    <constraint firstItem="Gs6-jm-pFD" firstAttribute="top" secondItem="sgl-P9-1Xh" secondAttribute="top" id="dTR-4L-EOj"/>
-                    <constraint firstItem="Gs6-jm-pFD" firstAttribute="top" secondItem="sgl-P9-1Xh" secondAttribute="topMargin" constant="-8" id="iU3-fH-5VB"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Gs6-jm-pFD" secondAttribute="trailing" constant="32" id="iXD-Ld-Mow"/>
+                    <constraint firstAttribute="trailing" secondItem="CEP-iM-0pq" secondAttribute="trailing" id="Iy9-HS-KbE"/>
+                    <constraint firstItem="CEP-iM-0pq" firstAttribute="leading" secondItem="kdC-rB-6I6" secondAttribute="leading" id="Omc-Ji-2Yq"/>
+                    <constraint firstItem="CEP-iM-0pq" firstAttribute="top" secondItem="kdC-rB-6I6" secondAttribute="top" id="ldu-VD-8pN"/>
+                    <constraint firstAttribute="bottom" secondItem="CEP-iM-0pq" secondAttribute="bottom" id="n0Q-86-Ymy"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="Fur-gk-oH0"/>
-                        <exclude reference="cD1-jh-zKI"/>
-                        <exclude reference="iU3-fH-5VB"/>
-                        <exclude reference="iXD-Ld-Mow"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
-            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
-                <outlet property="imageV" destination="7G3-AH-ngg" id="NkI-Ai-o4E"/>
+                <outlet property="imageV" destination="CEP-iM-0pq" id="Nxq-mD-5i4"/>
             </connections>
-            <point key="canvasLocation" x="340" y="377"/>
+            <point key="canvasLocation" x="235" y="305"/>
         </tableViewCell>
     </objects>
 </document>
