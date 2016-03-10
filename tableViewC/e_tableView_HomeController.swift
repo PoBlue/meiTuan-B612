@@ -55,6 +55,14 @@ extension HomeController : UITableViewDataSource{
 }
 
 extension HomeController : UITableViewDelegate{
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        
+    }
+    
     func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         if indexPath.section < 3 {
             return false
