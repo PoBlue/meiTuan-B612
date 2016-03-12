@@ -9,21 +9,62 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    override func viewWillAppear(animated: Bool) 
-    {
-        super.viewDidLoad()
-        self.tabBarController?.tabBar.hidden = true
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    var headerView : HeaderView!
+    var headerCell : UITableViewCell!
+    var headerY : CGFloat!
+    var headerViewAdded : Bool = false
+    
+    override func viewDidLoad() {
+        self.tableView.registerNib(UINib(nibName: "ImageCell", bundle: mainBundle), forCellReuseIdentifier: "ImageCell")
+        createStickyHeaderView()
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        self.tabBarController?.tabBar.hidden = false
+    
+    func createStickyHeaderView(){
+        headerView = NSBundle.mainBundle().loadNibNamed("HeaderView", owner: self, options: nil)[0] as! HeaderView
+        
+        headerY = tableViewHeight / 3
+        headerView.frame.origin.y = headerY
+        headerView.frame.size.height = tableViewHeight / 9
+        headerView.frame.size.width = 600
+        tableView.addSubview(headerView)
     }
+    
+    
+    
+    
+    
 
 }
 
 extension DetailViewController: UITableViewDataSource{
+    
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return tableViewHeight / 20
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        switch indexPath.section{
+        case 0:
+            if indexPath.row == 0{
+                return headerY
+            }
+            return tableViewHeight / 9
+        case 1:
+            return tableViewHeight / 9
+            
+        default:
+            return tableViewHeight / 11
+        }
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 6
     }
@@ -32,7 +73,7 @@ extension DetailViewController: UITableViewDataSource{
         
         switch section{
         case 0:
-            return 1
+            return 3
         case 1:
             return 2
         case 2:
@@ -49,15 +90,28 @@ extension DetailViewController: UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let imageCell = tableView.dequeueReusableCellWithIdentifier("ImageCell")!
+        
+        let imageCell = tableView.dequeueReusableCellWithIdentifier("ImageCell") as! TableViewCell
         let textCell = tableView.dequeueReusableCellWithIdentifier("Cell")!
+        headerCell = tableView.dequeueReusableCellWithIdentifier("HeaderCell")!
+        
         switch indexPath.section{
         case 0:
-            return imageCell
+            if indexPath.row == 0{
+                imageCell.imageV.image = UIImage(named: "mainImage")
+                return imageCell
+            }
+            
+            if indexPath.row == 1{
+                
+                return headerCell
+            }
+            
+            return textCell
         case 1:
             return textCell
         case 2:
-            return imageCell
+            return textCell
         case 3:
             return textCell
         case 4:
@@ -70,5 +124,13 @@ extension DetailViewController: UITableViewDataSource{
         
     }
     
+    
+    
 }
-extension DetailViewController: UITableViewDelegate{}
+extension DetailViewController: UITableViewDelegate{
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+            headerView.frame.origin.y =  max(headerY, scrollView.contentOffset.y)
+        }
+
+}
+

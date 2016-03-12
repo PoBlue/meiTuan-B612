@@ -11,6 +11,7 @@ import UIKit
 class MineViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         self.tableView.contentInset = UIEdgeInsets(top: -0.1 , left: 0, bottom: 0, right: 0)
         self.tableView.registerNib(UINib(nibName: "ImageCell", bundle: mainBundle), forCellReuseIdentifier: "ImageCell")
