@@ -78,7 +78,7 @@
 		13C5F1481C6CC30600C38DFC /* tableViewCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C5F14C1C6CC30600C38DFC /* tableViewCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCUITests.swift; sourceTree = "<group>"; };
 		13C5F14E1C6CC30600C38DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13C5F15A1C6CC33300C38DFC /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = ../../tableVC/HomeController.swift; sourceTree = "<group>"; };
+		13C5F15A1C6CC33300C38DFC /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		13C5F15E1C6CC5E000C38DFC /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		13C5F1621C6CEE0300C38DFC /* PageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
